@@ -100,7 +100,7 @@ namespace EvadePlus
             ControlsMenu = MainMenu.AddSubMenu("Controls");
             ControlsMenu.AddGroupLabel("Controls");
             ControlsMenu.Add("enableEvade", new KeyBind("Enable Evade", true, KeyBind.BindTypes.PressToggle, 'M'));
-            ControlsMenu.Add("dodgeOnlyDangerous", new KeyBind("Dodge Only Dangerous", false, KeyBind.BindTypes.HoldActive));
+            ControlsMenu.Add("dodgeOnlyDangerous", new KeyBind("Dodge Only Dangerous", true, KeyBind.BindTypes.PressToggle, 'P'));
         }
 
         private static EvadeSkillshot GetSkillshot(string s)
